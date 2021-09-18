@@ -1,0 +1,56 @@
+
+@import "../common/variables"  ;
+@import "../common/mixins"     ;
+@import "../common/typography" ;
+@import "../common/animation" ;
+
+
+.intro-section {
+  @include gradient;
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
+
+  .video-box{
+    position: relative;
+
+    a{
+        @include absoluteCenter ;
+      span{
+        i{
+          font-size:6rem;
+          color:$secondary;
+        } // i
+      } // span
+    } // a
+
+  } // video-box
+
+} // intro-section
+
+
+
+
+
+
+.border-animation{
+  position: absolute;
+  width:6rem;
+  height:6rem;
+  border-radius:50%;
+  top:0;
+  left:0;
+  animation: pulse-border 1.5s linear infinite;
+ 
+}
+
+
+   .border-1{
+  //  border : 2rem solid $white !important ;
+    animation-delay: 1s;
+  }
+  
+  .border-2{
+    border : 2rem solid $white !important ;
+   animation-delay: 1.5s;
+  } 

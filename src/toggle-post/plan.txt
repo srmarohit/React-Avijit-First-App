@@ -1,0 +1,20 @@
+
+ ======> Toggle Post <==========
+
+ [-] Create two component from App.js and Post.js
+ [-] make Post component as a children component of App component.
+ [-] place some content in between Post Component in App.js file
+ [-] set attribute maxLength for Post Component .
+
+ [-] lets make design Post Component
+ [-] first check the length of Post children content which is less or not than max. length .
+ [-] if we have already short content then just return all article content.
+ [-] if article has length than maxlength execute else block.
+
+ [-] initialize a state hidden with true value by default.
+ [-] check condition of hidden state with true then show trimmed article otherwise show full article .
+ [-] similar apply anothe condition with hidden if true then show read more button otherwise show read less button.. 
+
+ [-] read more button has onClick functionality with change hidden state from true to false.
+ 
+ [-] read less button has onClick functionality with change hidden state from false to true.
