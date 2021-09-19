@@ -1,0 +1,68 @@
+
+
+@import "../common/variables"  ;
+@import "../common/mixins"     ;
+@import "../common/typography" ;
+
+.portfolio{
+  padding: 4rem 0 ;
+
+  .portfolio-box{
+    position: relative;
+    width:100%;
+    max-height:18.5rem;
+    overflow: hidden; // to hide caption info of project
+    margin-bottom: 1.2rem;
+    border-top: 0.6rem solid $purple-dark;
+
+    img{
+      width:100%;
+      height:100%;
+    }
+
+    .portfolio-info{
+      // make it position to absolute to set background entire div.
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba($primary, 0.5);
+
+      //set visibility hidden 
+      opacity : 0;
+      visibility: none;
+      // its visible on hover over it
+
+      .caption{
+        //set again position absolute respect to portfolio-item
+        @include absoluteCenter ;
+        text-align: center;
+        color:$white;
+
+        h4{
+          text-transform: uppercase;
+        }//h4
+
+      }//caption
+
+    }//portfolio-info
+
+    &:hover{
+
+      img{
+        transform : scale(1.5);
+        transition: $smooth;
+      }//img
+
+      //set visibilit visible 
+      .portfolio-info{
+         opacity: 1;
+         visibility: visible;
+         transition: $smooth ;
+      }// .portfolio-info
+
+    }// hover- portfolio-box
+
+  }//portfolio-box
+}//portfolio

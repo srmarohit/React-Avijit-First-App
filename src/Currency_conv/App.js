@@ -12,8 +12,8 @@ import axios from "axios"
 function App() {
 
     const [state, setState]  = useState({
-             from:"",
-             to : "",
+             from:"USD",
+             to : "INR",
              amount:"",
              output:""
     })
